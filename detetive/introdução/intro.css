@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fundo azul com gradiente linear */
+    background: linear-gradient(to bottom, #010b2b, #0a3d66); /* Do azul escuro para um azul aço */
+    color: white; /* Cor do texto para contraste */
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    position: fixed; /* Fixa o título na tela */
+    top: 20px; /* 20 pixels do topo */
+    left: 50%; /* Inicia no centro horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centralizar perfeitamente */
+    z-index: 999; /* Garante que ele fique acima de outros elementos */
+
+    /* Estilos visuais */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    font-family: Arial, sans-serif; /* Fonte */
+    font-size: 1.5em; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto dentro do título */
+}
+
+
+p {
+    font-size: 1.5em; /* Tamanho maior para o texto */
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo do botão para combinar */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid white; /* Borda branca */
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
